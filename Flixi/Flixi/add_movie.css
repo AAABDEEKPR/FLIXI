@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* Remove default margin from body */
+    padding: 20px;
+    /* Add some padding for better spacing */
+    background-color: rgb(12, 235, 231);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    /* Make labels appear on separate lines */
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 800;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+textarea {
+    height: 100px;
+    /* Adjust textarea height as needed */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Indicate clickable element */
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049;
+    /* Green shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"],
+    textarea,
+    select {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
